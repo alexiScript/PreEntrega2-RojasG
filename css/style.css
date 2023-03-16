@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+
 .seccionPrincipal {
     height: 90vh;
     background-image: url("../img/one-piece-artwork-4011.webp");
@@ -66,6 +71,10 @@
     align-items: center;
 }
 
+.targeta:hover {
+    transform: translate(0, -20px);
+}
+
 .targetas a {
     text-decoration: none;
     color: black;
@@ -103,6 +112,28 @@
     border-bottom: 3px solid white;
     margin-bottom: 30px;
     padding-bottom: 30px;
+}
+
+.pie_pagina2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(39, 34, 34);   
+}
+
+.copyright {
+    display: flex;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+    color: white;
+    justify-content: center;
+    padding: 15px;
+
+   
+}
+
+.copyright a {
+    color: white;
 }
 
 /*mugiwaras*/
@@ -271,6 +302,8 @@
 .targetas3 {
     display: flex;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .targeta4 {
@@ -502,11 +535,6 @@
 
 /*media*/
 
-@media screen and (max-width: 1210px) {
-
-   
-
-}
 
 @media screen and (max-width: 1024px) {
 
@@ -531,9 +559,23 @@
         grid-template-columns: 2fr;
     }
 
+    .targetas2 {
+        margin: 3px 0px 3px 0px;
+
+    }
+
     .yonkou {
         flex-direction: column;
         align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .targetas3 img {
+        width: 200px;
+        height: 250px;
     }
 
 }
