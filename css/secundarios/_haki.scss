@@ -1,0 +1,104 @@
+.tituloContenedor3 {
+    padding: 20px;
+
+    & h1 {
+        background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+
+        font-size: 2rem;
+        margin-bottom: 20px;
+        -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    }
+
+    @-webkit-keyframes focus-in-contract {
+        0% {
+            letter-spacing: 1em;
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes focus-in-contract {
+        0% {
+            letter-spacing: 1em;
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.targetas2 {
+    margin: 90px;
+    text-align: center;
+
+    & h2 {
+        margin: 80px;
+    }
+
+    .targetas3 {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+        & a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+        }
+
+        .targeta4 {
+            border: 2px solid rgba(92, 56, 56, 0.447);
+            width: 100%;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img2 {
+                padding: 5px;
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+            }
+        }
+
+        .targeta_shank:hover {
+            transform: translate(0, -20px);
+            box-shadow: 3px 3px 60px red;
+
+        }
+
+        .targeta_bigmom:hover {
+            transform: translate(0, -20px);
+            box-shadow: 3px 3px 60px pink;
+        }
+
+        .targeta_kaido:hover {
+            transform: translate(0, -20px);
+            box-shadow: 3px 3px 60px black;
+        }
+    }
+
+
+}

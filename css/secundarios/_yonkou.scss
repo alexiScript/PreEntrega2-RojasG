@@ -1,0 +1,56 @@
+.tituloContenedor4 {
+    padding: 20px;
+
+    & h1 {
+        background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+        color: white;
+
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 5px;
+        margin-bottom: 20px;
+        -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes focus-in-contract {
+        0% {
+            letter-spacing: 1em;
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes focus-in-contract {
+        0% {
+            letter-spacing: 1em;
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.yonkou {
+    display: flex;
+    gap: 90px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+
+    .img2 {
+        border-radius: 5px;
+    }
+}

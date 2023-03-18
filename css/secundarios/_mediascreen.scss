@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 1024px) {
+
+    .pie_pagina {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .targetas3 {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .targetas {
+        flex-direction: column;
+    }
+
+    .pie_pagina {
+        grid-template-columns: 2fr;
+    }
+
+    .targetas2 {
+        margin: 3px 0px 3px 0px;
+
+    }
+
+    .yonkou {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .targetas2 .targetas3 .targeta4 .img2  {
+        width: 250px;
+        height: 200px;
+    }
+
+}

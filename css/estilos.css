@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;200;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card {
+  animation: fade-in-bottom 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.collapse {
+  display: flex;
+  justify-content: end;
+}
+
+.seccionPrincipal {
+  height: 90vh;
+  background-image: url("../img/one-piece-artwork-4011.webp");
+  background-size: cover;
+}
+.seccionPrincipal h1 {
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.paginasPiratas {
+  padding: 40px;
+}
+.paginasPiratas h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.paginasPiratas .targetas {
+  display: flex;
+  gap: 40px;
+}
+.paginasPiratas .targetas a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.paginasPiratas .targetas .targeta {
+  background-color: rgba(17, 41, 197, 0.573);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paginasPiratas .targetas .targeta:hover {
+  transform: translate(0, -20px);
+}
+.paginasPiratas .targetas .targeta .img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pie_pagina {
+  background-image: url("../img/wallpaperbetter.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "texto .";
+}
+.pie_pagina .formulario {
+  grid-area: texto;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.278);
+  padding: 60px;
+}
+.pie_pagina .formulario .unete {
+  background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+}
+.pie_pagina .texto_1 {
+  border-bottom: 3px solid white;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.pie_pagina2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(39, 34, 34);
+}
+.pie_pagina2 .copyright {
+  display: flex;
+  background-color: rgb(11, 11, 11);
+  width: 100%;
+  color: white;
+  justify-content: center;
+  padding: 15px;
+}
+.pie_pagina2 .copyright a {
+  color: white;
+}
+
+.tituloContenedor {
+  padding: 20px;
+}
+.tituloContenedor h1 {
+  background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.card-4:hover {
+  transform: translate(0, -20px);
+}
+
+.tituloContenedor2 {
+  padding: 20px;
+}
+.tituloContenedor2 h1 {
+  background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.tituloContenedor3 {
+  padding: 20px;
+}
+.tituloContenedor3 h1 {
+  background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.targetas2 {
+  margin: 90px;
+  text-align: center;
+}
+.targetas2 h2 {
+  margin: 80px;
+}
+.targetas2 .targetas3 {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.targetas2 .targetas3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+.targetas2 .targetas3 .targeta4 {
+  border: 2px solid rgba(92, 56, 56, 0.447);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.targetas2 .targetas3 .targeta4 .img2 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.targetas2 .targetas3 .targeta_shank:hover {
+  transform: translate(0, -20px);
+  box-shadow: 3px 3px 60px red;
+}
+.targetas2 .targetas3 .targeta_bigmom:hover {
+  transform: translate(0, -20px);
+  box-shadow: 3px 3px 60px pink;
+}
+.targetas2 .targetas3 .targeta_kaido:hover {
+  transform: translate(0, -20px);
+  box-shadow: 3px 3px 60px black;
+}
+
+.tituloContenedor4 {
+  padding: 20px;
+}
+.tituloContenedor4 h1 {
+  background-image: linear-gradient(to right, rgb(93, 93, 239), transparent);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.yonkou {
+  display: flex;
+  gap: 90px;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.yonkou .img2 {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pie_pagina {
+    grid-template-columns: 2fr 1fr;
+  }
+  .targetas3 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .targetas {
+    flex-direction: column;
+  }
+  .pie_pagina {
+    grid-template-columns: 2fr;
+  }
+  .targetas2 {
+    margin: 3px 0px 3px 0px;
+  }
+  .yonkou {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .targetas2 .targetas3 .targeta4 .img2 {
+    width: 250px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
