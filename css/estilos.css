@@ -294,13 +294,13 @@ p {
   border-radius: 5px;
 }
 .yonkou .yonkou1:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 .yonkou .yonkou1:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .yonkou .yonkou1:nth-child(3) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @media screen and (max-width: 1024px) {
